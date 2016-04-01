@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hillaryslavik.simonapp.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/gameButton"
+        android:layout_x="111dp"
+        android:layout_y="298dp"
+        android:layout_below="@+id/blueSquare"
+        android:layout_alignLeft="@+id/yellowSquare"
+        android:layout_alignStart="@+id/yellowSquare"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignRight="@+id/blueSquare"
+        android:layout_alignEnd="@+id/blueSquare" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/redSquare"
+        android:background="#d20f0f"
+        android:layout_alignLeft="@+id/yellowSquare"
+        android:layout_alignStart="@+id/yellowSquare" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/greenSquare"
+        android:layout_x="216dp"
+        android:layout_y="63dp"
+        android:background="#129a0b"
+        android:layout_above="@+id/blueSquare"
+        android:layout_alignLeft="@+id/blueSquare"
+        android:layout_alignStart="@+id/blueSquare" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/blueSquare"
+        android:layout_x="26dp"
+        android:layout_y="148dp"
+        android:background="#1e24e2"
+        android:layout_below="@+id/redSquare"
+        android:layout_toRightOf="@+id/redSquare"
+        android:layout_toEndOf="@+id/redSquare" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/yellowSquare"
+        android:layout_x="188dp"
+        android:layout_y="169dp"
+        android:background="#eeeb29"
+        android:layout_below="@+id/redSquare"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Score:"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gameButton"
+        android:layout_alignStart="@+id/gameButton"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/blueSquare"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="0"
+        android:textSize="30dp" />
+
+</RelativeLayout>
